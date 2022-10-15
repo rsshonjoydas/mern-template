@@ -5,6 +5,9 @@
   "author": "”rsshonjoydas” <“rsshonjoydas@email.com”>",
   "license": "MIT",
   "scripts": {
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "dev:app": "concurrently \"npm run server\" \"npm run client\"",
     "serverlint": "cd ./server && yarn lint",
     "clientlint": "cd ./client && yarn lint",
     "prepare": "husky install"
@@ -15,6 +18,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "concurrently": "^7.4.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
