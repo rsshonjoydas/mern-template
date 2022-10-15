@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev:app",
+      "problemMatcher": [],
+      "label": "npm: dev:app",
+      "detail": "concurrently \"npm run server\" \"npm run client\""
+    }
+  ]
+}
